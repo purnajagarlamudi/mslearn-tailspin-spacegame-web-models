@@ -38,7 +38,7 @@ steps:
 - task: NuGetCommand@2
   displayName: 'Publish NuGet package'
   inputs:
-    command: nuget.exe push -Source "Tailspin.SpaceGame.Web.Models" -ApiKey 68b509b9-73fa-4eaa-98d4-503afd02ba47
+    command: push
     publishVstsFeed: 'Space Game - web - Dependencies/Tailspin.SpaceGame.Web.Models'
     allowPackageConflicts: true
   condition: succeeded()
